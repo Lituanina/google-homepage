@@ -1,0 +1,191 @@
+/* || General styles */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+
+}
+
+body {
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15% 0 25px;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+/* || Typography */
+
+a {
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* || Header and Main Navigation */
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 1%;
+  margin: 15px;
+}
+
+ul {
+  padding: 15px;
+}
+
+/* || Search */
+
+
+
+
+
+.searchbar {
+
+  display: flex;
+  margin: 0 auto;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  height: 44px;
+  width: 75%;
+  max-width: 584px;
+  padding-left: 20px;
+
+}
+
+.searchbar:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+    outline: none;
+    width: 100%;
+    border:none;
+    border-radius: 25px;
+
+}
+
+.icon-contain {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.looking-glass {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: inline-block;
+  fill: #9aa0a6;
+
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.material-icons {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+button {
+  min-width: 54px;
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+  border: 0px;
+  border-radius: 5px;
+  margin: 11px 4px;
+  padding: 0 16px;
+ color: #3c4043;
+  font-size: 14px;
+}
+
+button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+
+
+}
+
+/* ||  Footer   */
+
+footer {
+  border-top: 1px solid #dadce0;
+  background-color: rgb(242, 242, 242);
+  position: fixed;
+  flex-wrap: wrap;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;;
+  padding: 0 20px;
+
+
+}
+
+.footer-links {
+  color:  #70757a;
+  display: block;
+  padding: 15px;
+
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+
+
+
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* || Utilities  */
+
+.push {
+  flex-grow: 1;
+}
+
+/* ||  */

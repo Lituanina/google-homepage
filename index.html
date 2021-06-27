@@ -20,31 +20,34 @@
       <header>
         <nav>
           <ul>
-            <li><a href="#">Image Search</a></li>
-            <li><a href="#">Advanced Search</a></li>
-            
+            <li><a href="images.html">Image Search</a></li>
+            <li><a href="advanced.html">Advanced Search</a></li>
+
           </ul>
         </nav>
       </header>
 
 
       <div class="logo-wrapper">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
       </div>
+
+      <form action="https://google.com/search">
 
       <div class="searchbar">
         <div class="icon-contain">
           <span class="material-icons-outlined material-icons">search</span>
-        </div> <input class="search-input" type="text" name="search" value="">
+        </div> <input class="search-input" type="text" name="q">
+
         </div>
 
 
         <div class="button-wrapper">
-          <button type="button" name="button">Google Search</button>
-          <button type="button" name="button">I'm Feeling Lucky</button>
+            <input type="submit" value="Google Search" class="search-buttons">
+          <button type="button" name="button" class="search-buttons">I'm Feeling Lucky</button>
         </div>
 
-
+    </form>
 
 
         <footer>

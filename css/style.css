@@ -4,6 +4,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-width: 400px;
   font-size: 14px;
   font-family: arial,sans-serif;
 
@@ -19,12 +20,41 @@ body {
 
 }
 
+/* || Logo */
+
 .logo-wrapper {
   display: flex;
   justify-content: center;
-  margin: 15% 0 25px;
+  align-items: flex-end;
+  height: 290px;
 
 
+}
+.logo {
+
+  width: 272px;
+  height: 92px;
+  object-position: center bottom;
+  width: auto;
+  padding: 20px;
+
+}
+
+.images {
+  color: #4285f4;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  position: relative;
+  left: 215px;
+  top: 76px;
+  white-space: nowrap;
+}
+
+.images-logo {
+  background-size: 272px 92px;
+  height: 92px;
+  width: 272px;
+  background: url("../assets/googlelogo.png") no-repeat;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -44,6 +74,10 @@ a:hover {
 
 /* || Header and Main Navigation */
 
+header {
+  height: 60px;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -55,6 +89,8 @@ nav ul {
 ul {
   padding: 15px;
 }
+
+
 
 /* || Search */
 
@@ -72,6 +108,7 @@ ul {
   width: 75%;
   max-width: 584px;
   padding-left: 20px;
+
 
 }
 
@@ -123,7 +160,7 @@ svg {
   padding-top: 18px;
 }
 
-button {
+.search-buttons {
   min-width: 54px;
   height: 36px;
   background-color: #f8f9fa;
@@ -136,7 +173,7 @@ button {
   font-size: 14px;
 }
 
-button:hover {
+.search-buttons:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
   background-color: #f8f9fa;
   border: 1px solid #dadce0;

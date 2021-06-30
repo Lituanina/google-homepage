@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-
+  margin: 0 auto -60px;
 }
 
 /* || Logo */
@@ -28,8 +28,9 @@ body {
   align-items: flex-end;
   height: 290px;
 
-
 }
+
+
 .logo {
 
   width: 272px;
@@ -57,9 +58,7 @@ body {
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-}
+
 
 /* || Typography */
 
@@ -72,30 +71,41 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /* || Header and Main Navigation */
 
 header {
-  height: 60px;
+  margin: 15px;
+  padding: 8px;
+
 }
+
 
 nav ul {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   gap: 1%;
-  margin: 15px;
+
 }
 
+
 ul {
-  padding: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+
+}
+
+li > a {
+  padding: 7px;
 }
 
 
 
 /* || Search */
-
-
-
 
 
 .searchbar {
@@ -219,10 +229,137 @@ footer {
   justify-content: flex-end;
 }
 
-/* || Utilities  */
+/* || Advanced Search  */
 
-.push {
-  flex-grow: 1;
+.header-advanced {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+.logo-advanced {
+  padding-right: 30px;
+}
+
+.logo-advanced:before {
+
+    content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+    display: inline-block;
+    height: 24px;
+    width: 74px;
+
+}
+
+.advanced-title {
+  color: #d93025;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 25px 35px 0px;
+  padding-bottom: 25px;
+
+}
+
+.nav-advanced {
+  grid-column-start: 3;
+}
+
+.advanced_search {
+
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 25px 2% 0 45px;
+
+
+}
+
+.advanced_search_form {
+  margin-top: 25px;
+  grid-template-columns: 25% 50% 25%;
+
+}
+
+label {
+
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 25%;
+  text-align: left;
+
+
+}
+
+.adv_textinput {
+  display: inline-block;
+  float: left;
+
+  margin: 8px 1px;
+  width: 50%;
+  text-align: left;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+
+.adv_info {
+  float: left;
+  display: inline-block;
+  width: 32%;
+  min-width: 160px;
+  margin: 0 0 8px 1%;
+  color: #555;
+  font-size: 11px;
+  padding-left: 5px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.advanced-line {
+  margin: 18px 0;
+  clear: both;
+  border-top: 1px solid #ebebeb;
+
+}
+
+.advanced_button {
+  padding: 0 12px;
+  margin: 10px 0;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 1px solid #2f5bb7;
+  box-shadow: none;
+  background-color: #4d90fe;
+  background-image: linear-gradient(top,#4d90fe,#4787ed);
+  border: 1px solid #3079ed;
+  color: #fff;
+
+}
+
+.advanced_button:hover {
+  background-color: #357ae8;
+  background-image: linear-gradient(top,#4d90fe,#357ae8);
+  border: 1px solid #2f5bb7;
+  border-image: initial;
+}
+
+.advanced_span {
+ display: inline-block;
+  min-width: 167px;
+  width: 16%;
+  font-size: 16px;
+  min-height: 42px;
+  font-weight: 500;
+  color: #333;
+
+
+}
+
+
+
 
 /* ||  */

@@ -100,9 +100,8 @@ ul {
 }
 
 li > a {
-  padding: 7px;
+  font-size: 13px;
 }
-
 
 
 /* || Search */
@@ -175,7 +174,6 @@ svg {
   height: 36px;
   background-color: #f8f9fa;
   border: 1px solid transparent;
-  border: 0px;
   border-radius: 5px;
   margin: 11px 4px;
   padding: 0 16px;
@@ -275,27 +273,22 @@ footer {
 
 .advanced_search_form {
   margin-top: 25px;
-  grid-template-columns: 25% 50% 25%;
 
 }
 
-label {
 
-  display: inline-block;
-  float: left;
-  clear: left;
-  width: 25%;
+label {
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
+  font-size: 13px;
+
 
 
 }
 
 .adv_textinput {
-  display: inline-block;
-  float: left;
-
   margin: 8px 1px;
-  width: 50%;
   text-align: left;
   border-radius: 1px;
   border: 1px solid #d9d9d9;
@@ -303,31 +296,43 @@ label {
   font-size: 13px;
   height: 25px;
   padding: 1px 8px;
+    outline: none;
 }
 
+
 .adv_info {
-  float: left;
-  display: inline-block;
-  width: 32%;
-  min-width: 160px;
+  white-space: nowrap;
   margin: 0 0 8px 1%;
   color: #555;
   font-size: 11px;
-  padding-left: 5px;
-  vertical-align: middle;
-  position: relative;
+  padding: 10px 0 10px 5px;
+
+}
+
+.last_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last_line_text {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .advanced-line {
   margin: 18px 0;
-  clear: both;
   border-top: 1px solid #ebebeb;
 
 }
 
 .advanced_button {
+  grid-column: 2/3;
+  text-align: center;
   padding: 0 12px;
-  margin: 10px 0;
+  margin: 20px auto;
   font-size: 11px;
   font-weight: bold;
   border-radius: 2px;
@@ -359,7 +364,29 @@ label {
 
 }
 
+#adv_form {
+  display: grid;
+  grid-template-columns: 15% 45% 25%;
+}
 
+label {
+  grid-column: 1/2;
+}
 
+.adv_textinput{
+  grid-column: 2/3;
+}
 
+.adv_info {
+  grid-column: 3/4;
+  display: inline;
+  vertical-align: middle;
+}
+
+.explanation {
+  color: #666;
+  font-family: monospace;
+  font-size: 11px;
+  white-space: pre;
+}
 /* ||  */

@@ -22,49 +22,53 @@
 
         <nav class="nav-advanced">
           <ul>
-            <li><a href="index.html">Google Search</a></li>
-            <li><a href="images.html">Image Search</a></li>
+            <li><a href="index.html">Google</a></li>
+            <li><a href="images.html">Images</a></li>
 
           </ul>
         </nav>
       </header>
 
       <h1 class="advanced-title">Advanced Search</h1>
-      <hr class="advanced-line">
+      <div class="advanced-line">
 
         <div class="advanced_search">
 
             <span class="advanced_span">Find pages with...</span>
 
         <div class="advanced_search_form">
-          <form action="/search" id="s1zaZb" method="GET" name="f">
+          <form action="https://google.com/search" id="adv_form" method="GET" name="f">
 
-            <p><label for="all_these">all these words:</label>
+            <label for="all_these">all these words:</label>
               <input class="adv_textinput" id="all_these" name="as_q" type="text">
-              <span class="adv_info">Type the important words: tri-colour rat terrier</span>
-            </p>
+              <span class="adv_info">Type the important words: <span class="explanation">tri-colour rat terrier</span></span>
 
-            <p><label for="this_exact">this exact word or phrase:</label>
+
+            <label for="this_exact">this exact word or phrase:</label>
               <input class="adv_textinput" id="this_exact" name="as_epq" type="text">
-                <span class="adv_info">Put exact words in quotes: "rat terrier"</span>
-            </p>
+                <span class="adv_info">Put exact words in quotes: <span class="explanation">"rat terrier"</span></span>
 
-            <p><label for="any_of">any of these words:</label>
+
+            <label for="any_of">any of these words:</label>
               <input class="adv_textinput" id="any_of" name="as_oq" type="text">
-          <span class="adv_info">Type OR between all the words you want: miniature OR standard</span>
-            </p>
+          <span class="adv_info">Type OR between all the words you want: <span class="explanation">miniature OR standard</span></span>
 
-            <p><label for="none_of">none of these words:</label>
+
+            <label for="none_of">none of these words:</label>
               <input class="adv_textinput" id="this_exact" name="as_eq" type="text">
-                <span class="adv_info">Put exact words in quotes: "rat terrier"</span>
-            </p>
+                <span class="adv_info">Put a minus sign just before words that you don't want: <span class="explanation">-rodent, -"Jack Russell"</span></span>
 
-            <p><label for="this_exact">this exact word or phrase:</label>
-              to
-                <input class="adv_textinput" id="this_exact" name="as_nhi" type="text">
-                <span class="adv_info">Put exact words in quotes: "rat terrier"</span>
-            </p>
-                      <input class="advanced_button" style="-webkit-user-select:none;user-select:none;line-height:100%;height:30px;min-width:120px" value="Advanced Search" type="submit">
+
+                  <label for="numbers_from">numbers ranging from:</label>
+            <div class="last_line">
+
+              <input class="adv_textinput" id="numbers_from" name="as_nhi" type="text">
+                <span class="last_line_text">to</span>
+                  <input class="adv_textinput" id="numbers_from" name="as_nhi" type="text">
+            </div>
+            <span class="adv_info">Put two full stops between the numbers and add a unit of measurement:
+              <br><span class="explanation"></span>10..35 kg, £300..£500, 2010..2011</span>
+                    <input class="advanced_button" style="-webkit-user-select:none;user-select:none;line-height:100%;height:30px;min-width:120px" value="Advanced Search" type="submit">
           </form>
 
         </div>

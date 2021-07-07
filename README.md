@@ -3,6 +3,9 @@
 Project based on the first assignment of the [CS50 course](https://cs50.harvard.edu/web/2020/):
 Google Search clone with separate pages for image and advanced search.
 
+## Youtube demonstration
+[Demonstration of the website on youtube.](https://www.youtube.com/watch?v=AH1QoLWioe8)
+
 ## Specification
 The website must meet the following requirements:
 
